@@ -3,27 +3,25 @@
 int main()
 {
 
-int num,i,count=0;
+int num,i,j,count=0;
 
 printf("Enter any number:");
 scanf("%d",&num);
 
-for(i=1;i<=num;i++)
+for(i=2;i<=num;i++){
+    count=0;
+for(j=1;j<=i;j++)
 {
-    if(num%i==0)
+    if(i%j==0)
     {
         count=count+1;
-    }
-}
-if(count==2)
-{
-    printf("It is a PRIME NUMBER");
-}
+    }}
 
-if(count>2)
+if(count==2
+)
 {
-    printf("It is NOT a PRIME NUMBER");
-}
+    printf("%d\n",i);
+}}
 
 return 0;
 
