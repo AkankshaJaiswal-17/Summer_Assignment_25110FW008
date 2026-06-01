@@ -10,11 +10,13 @@ int main()
 
     temp = num;
 
-    while (num > 0) {
+    while (temp > 0) 
+    {
         rem = temp % 10;
 
-        int fact = 1;
-        for (int i = 1; i <= rem; i++) {
+        fact = 1;
+        for (int i = 1; i <= rem; i++) 
+        {
             fact=fact*i;
         }
 
@@ -23,9 +25,13 @@ int main()
         temp = temp / 10;
     }
 
-    if (sum == num) {
+    if (sum == num) 
+    {
         printf("%d is a STRONG number.\n", num);
-    } else {
+
+    } 
+    else
+   {
         printf("%d is NOT a STRONG number.\n", num);
     }
 
